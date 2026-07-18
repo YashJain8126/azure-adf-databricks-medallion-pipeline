@@ -1,0 +1,28 @@
+{
+	"name": "nyc_raw_src_greater_9",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_nyc_web",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_month_greater": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "trip-data/green_tripdata_2025-@{dataset().p_month_greater}.parquet",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

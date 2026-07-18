@@ -1,0 +1,15 @@
+{
+	"name": "nyc-data-adf-mega-project-2",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6a2e1305-b59c-44b2-84f8-27f47ca3398d",
+		"tenantId": "9991671c-05c8-409e-8d16-c9bbd64a93ec"
+	}
+}
